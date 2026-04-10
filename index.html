@@ -1,17 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>SonrieYapp</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SonrieYapp | Documentos Legales</title>
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --primary-dark: #1f5a23;
+      --accent: #e8f5e9;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --bg: #f4f7fb;
+      --border: #dbe4ea;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f4f7fb 0%, #eef7f0 100%);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 16px;
+      border-radius: 18px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+      color: var(--primary-dark);
+    }
+
+    p {
+      line-height: 1.7;
+      margin: 0 0 14px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0 auto 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--primary-dark);
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      min-height: 72px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 18px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 28px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <section class="hero">
+      <div class="logo">🦷</div>
+      <h1>SonrieYapp</h1>
+      <p class="subtitle">
+        Plataforma tecnológica para facilitar la coordinación de citas entre pacientes y profesionales de odontología.
+      </p>
+      <p class="subtitle">
+        En esta página podés consultar nuestros documentos legales vigentes.
+      </p>
+    </section>
 
-<h1>SonrieYapp</h1>
+    <section class="cards">
+      <article class="card">
+        <h2>Términos y Condiciones</h2>
+        <p>
+          Conocé las reglas de uso de la plataforma, responsabilidades de las partes, gestión de citas y limitaciones del servicio.
+        </p>
+        <a class="btn" href="terminos.html">Leer términos</a>
+      </article>
 
-<p>Bienvenido a la página oficial.</p>
+      <article class="card">
+        <h2>Política de Privacidad</h2>
+        <p>
+          Consultá cómo recopilamos, usamos, almacenamos y protegemos la información de los usuarios dentro de SonrieYapp.
+        </p>
+        <a class="btn" href="privacidad.html">Leer privacidad</a>
+      </article>
+    </section>
 
-<p><a href="terminos.html">Términos y Condiciones</a></p>
-<p><a href="privacidad.html">Política de Privacidad</a></p>
-
+    <div class="footer">
+      © 2026 SonrieYapp. Todos los derechos reservados.
+    </div>
+  </div>
 </body>
 </html>
